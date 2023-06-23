@@ -2,26 +2,70 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Motivational Poster</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
-      rel="stylesheet"
-    />
+    <title>CSS Flag Project</title>
+    <style>
+      /* Write your CSS Code here */
+      .flag {
+        background-color: #ce1126;
+        height: 600px;
+        width: 900px;
+        position: relative;
+      }
+      div > div {
+        background-color: #002868;
+        position: absolute;
+        top: 150px;
+        height: 300px;
+        width: 900px;
+      }
+      div > div > div {
+        background-color: #ffffff;
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        top: 50px;
+        left: 350px;
+      }
+
+      .flag > p {
+        color: white;
+        position: absolute;
+        margin-top: 1%;
+        top: 0;
+        left: 330px;
+        text-transform: capitalize;
+        font-size: 75px;
+      }
+
+      .flag > div > div > p {
+        font-size: 80px;
+        position: absolute;
+        margin-left: 0%;
+        margin-top: 0%;
+        text-align: center;
+      }
+    </style>
   </head>
+
+  <!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+https://appbrewery.github.io/flag-of-laos/
+-->
+
   <body>
-    <div id="main">
-      <img src="./assets/images/daenerys.jpeg" id="image" />
-      <h1 id="uppercase">let's fix an egg</h1>
-      <p>When you find something to eat in refrigerator at night</p>
+    <div class="flag">
+      <p>The Flag</p>
+      <div>
+        <div>
+          <p>of Laos</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
-<!-- 
-  TODO: Create a motivational post website.
-6. Read about the text-transform property on MDN docs to make the h1 uppercase with CSS.
-  https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform 
--->
