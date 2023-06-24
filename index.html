@@ -1,47 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- 
-TODO: Change the background color for each device
-[lightsalmon] Mobile Devices: 319px — 480px
-[powderblue] iPads and Tablets: 481px — 1200px
-[limegreen] Laptops: 1201px — 1600px
-[seagreen] Desktops: 1601px and more
--->
-
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1"
-    />
-    <title>Media Query</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Direction</title>
+    <!-- HINT:
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
+  https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators 
+  -->
     <style>
-      body {
-        background-color: aquamarine;
+      .container {
+        color: white;
+        border: 5px solid gold;
+        display: flex;
+        flex-direction: column;
+        width: 75px;
+        height: auto;
       }
 
-      @media (min-width: 319px) and (max-width: 480px) {
-        body {
-          background-color: lightsalmon;
-        }
+      /*
+Select all the elements that are the direct
+children of the .container class.
+    */
+
+      .red {
+        background-color: #eb4d4b;
+        height: 150px;
       }
-      @media (min-width: 481px) and (max-width: 1200px) {
-        body {
-          background-color: powderblue;
-        }
+      .orange {
+        background-color: #f0932b;
+        height: 150px;
       }
-      @media (min-width: 1201px) and (max-width: 1600px) {
-        body {
-          background-color: limegreen;
-        }
+      .yellow {
+        background-color: #f6e58d;
+        height: 150px;
       }
-      @media (min-width: 1601px) {
-        body {
-          background-color: seagreen;
-        }
+      .green {
+        background-color: #6ab04c;
+        height: 150px;
+      }
+      .blue {
+        background-color: #4834d4;
+        height: 150px;
+      }
+      .indigo {
+        background-color: #30336b;
+        height: 150px;
+      }
+      .purple {
+        background-color: #be2edd;
+        height: 150px;
+      }
+
+      .container > div {
+        font-size: 25px;
       }
     </style>
   </head>
 
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="red">Red</div>
+      <div class="orange">Orange</div>
+      <div class="yellow">Yellow</div>
+      <div class="green">Green</div>
+      <div class="blue">Blue</div>
+      <div class="indigo">Indigo</div>
+      <div class="purple">Purple</div>
+    </div>
+  </body>
 </html>
