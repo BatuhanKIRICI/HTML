@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mavi Efendi</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+        background-size: 180% 180%;
+        animation: gradient-animation 18s ease infinite;
+      }
+
+      @keyframes gradient-animation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      .feature-icon {
+        width: 25rem;
+        height: 20rem;
+        border-radius: 0.75rem;
+      }
+
+      .feature-icon > img {
+        border-radius: 20%;
+      }
+
+      h3 {
+        color: white;
+        text-align: inherit;
+      }
+      .row {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+      }
+      .navbar-nav {
+        padding-left: 80%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding: 0">
+      <div class="container-fluid" style="background-color: rgb(3, 35, 179)">
+        <a class="navbar-brand" href="#" style="color: white; font-size: 30px"
+          ><img
+            src="./mavi2.jpeg"
+            alt="Mavi"
+            height="100"
+            width="100"
+            style="border-radius: 20%"
+          />
+          Aslan Kral Mavi</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Anasayfa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hakkında</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+      <h1 class="display-4 fw-bold text-body-emphasis">Ben Mavi</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+          Ben Mavi. Sayfama hoş geldiniz. Özellikle aşağıdaki üç hıyarın
+          ikisinden çok usandım. Çevremde yeni arkadaş arıyorum. Kurtarın beni
+          bunlardan.
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">
+            İletişim
+          </button>
+        </div>
+      </div>
+      <div class="overflow-hidden" style="max-height: 30vh">
+        <div class="container px-5">
+          <img
+            src="./mavi1.png"
+            class="img-fluid border rounded-3 shadow-lg mb-4"
+            alt="Example image"
+            width="300"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container px-4 py-5" id="featured-3">
+      <h2 class="pb-2 border-bottom" style="text-align: center">
+        Kimler bu hıyarlar?
+      </h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+          >
+            <img src="./eymen.jpeg" alt="briefcase" height="300" width="300" />
+          </div>
+          <h3 class="fs-2" style="padding-left: 150px">Eyman</h3>
+        </div>
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+          >
+            <img src="./mete.jpeg" alt="bus-front" height="300" width="300" />
+          </div>
+          <h3 class="fs-2" style="padding-left: 150px">Pete</h3>
+        </div>
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+          >
+            <img
+              src="./kerem.jpeg"
+              alt="chat-square-heart"
+              height="300"
+              width="300"
+            />
+          </div>
+          <h3 class="fs-2" style="padding-left: 150px">Kerem</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/mavi3.jpeg" class="d-block w-100" alt="couple" />
+          </div>
+          <div class="carousel-item">
+            <img src="./mavi6.jpeg" class="d-block w-100" alt="dog" />
+          </div>
+          <div class="carousel-item">
+            <img src="./mavi9.jpeg" class="d-block w-100" alt="family" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-body-secondary">Anasayfa</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-body-secondary"
+                >Sıkça Sorulan Sorular</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-body-secondary">Hakkında</a>
+            </li>
+          </ul>
+          <p class="text-center text-body-secondary">© 2023 Mavi, Ltd. Şti.</p>
+        </footer>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
